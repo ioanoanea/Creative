@@ -4,11 +4,11 @@
     require 'send_notification.php';
 
 
-    $from = '4';//$_POST['from'];
-    $name = 'test';//$_POST['name'];
-    $to = '1';//$_POST['to'];
-    $message = 'test';//$_POST['message'];
-    $is_photo = '0';//$_POST['is_photo'];
+    $from = $_POST['from'];
+    $name = $_POST['name'];
+    $to = $_POST['to'];
+    $message = $_POST['message'];
+    $is_photo = $_POST['is_photo'];
     
     
     $sql = "SELECT * FROM messages ORDER BY id DESC";
